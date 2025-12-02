@@ -26,8 +26,11 @@ export default async function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product: Product) => (
           <ProductCard key={product.product_id} product={product} />
+        
         ))}
       </div>
+      <h2>Subscription</h2>
     </div>
+
   );
 }
